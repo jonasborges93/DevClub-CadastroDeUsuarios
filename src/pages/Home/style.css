@@ -1,0 +1,125 @@
+.register{
+    margin: 2.5rem 0;
+}
+
+.form{
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+
+    padding: 2rem 1.5rem;
+    background-color: rgba(255,255,255, .2);
+    border-radius: .5rem;
+    transition: background-color .1s;
+}
+
+.form__title{
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 1.4;
+    margin-bottom: 2rem;
+}
+
+.form__content{
+    display: flex;
+    flex-direction: column;
+}
+
+.form__input{
+    margin-bottom: 1rem;
+    width: 100%;
+    border: 0;
+    height: 3rem;
+    padding: 1rem;
+    border-radius: 8px;
+    line-height: 1.4;
+    background-color: transparent;
+    color: rgba(255,255,255,.8);
+    border: 1px solid rgba(255,255,255,.3)
+}
+
+.form__input::placeholder{
+    color: rgba(255,255,255,.5);
+}
+
+.form__button{
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    border: 0;
+    background-color: rgb(3, 3, 55);
+    color: rgba(255,255,255,.8);
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color .1s;
+    border: 1px solid rgba(255,255,255,.4)
+}
+
+.form__button:hover{
+    background-color: rgb(1, 1, 145);
+    border-color: rgba(255,255,255,.8);
+}
+
+.results__content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+@media(max-width:1080px){
+    .results__content{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width:768px){
+    .results__content{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.item{
+    padding: 2rem 1.5rem;
+    background-color: rgba(255,255,255, .2);
+    border-radius: .5rem;
+    transition: background-color .1s;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item:hover{
+    background-color: rgba(255,255,255, .4); 
+}
+
+.item__label{
+    font-size: 1rem;
+    line-height: 1.4;
+    font-weight: bold;
+}
+
+.item__label:not(:last-child){
+    margin-bottom: 1rem;
+}
+
+.item__text{
+    font-weight: normal;
+}
+
+.item__button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.item__button-img{
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: rgba(255,255,255,.8);
+    padding: .5rem;
+    border-radius: 50%;
+}
+
+.item__button-img:hover{
+    background-color: rgba(255,255,255,.6);
+}
